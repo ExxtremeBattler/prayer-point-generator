@@ -1,5 +1,9 @@
 import React from "react";
 
+function getPrayer() {
+    
+}
+
 
 function generateSection() {
     return(
