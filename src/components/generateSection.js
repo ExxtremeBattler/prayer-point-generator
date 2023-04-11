@@ -1,25 +1,29 @@
 import React from "react";
+import { useState } from "react";
+import prayerTopics from "../prayerTopics.json"
 
-function getPrayer() {
-    
-}
+let topic = ""
 
 
-function generateSection() {
+function GenerateSection() {
+
+  const [prayerTopic, setPrayerTopic] = useState(prayerTopics[Math.floor(Math.random() * prayerTopics.length)])
+
+
     return(
         <div class="card">
         <div class="card-header">
-          <h2>Generate a Password</h2>
+          <h2>Generate a Prayer Point!</h2>
         </div>
         <textarea
             readonly
             id="password"
-            placeholder="Your Secure Password"
+            value={prayerTopic}
+            placeholder="Your Prayer"
             aria-label="Generated Password"
           ></textarea>
-          <button onclick="getPasswordOptions()" id="generate" className="btn"> Generate Password</button>
         </div>
     )
 }
 
-export default generateSection
+export default GenerateSection
