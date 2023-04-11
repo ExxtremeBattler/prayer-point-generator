@@ -1,9 +1,22 @@
 import React from "react";
 import { useState } from "react";
 import prayerTopics from "../prayerTopics.json"
+import axios from "axios";
 
-let topic = ""
+const BASE_URL = "https://bible-api.com/john3:16"
 
+let topicVerse = ""
+
+
+
+  const getVerse = async () =>{
+    const resp = await axios.get(`${BASE_URL}`)
+    topicVerse = resp.data.text
+    console.log(topicVerse);
+  }
+
+
+getVerse()
 
 function GenerateSection() {
 
