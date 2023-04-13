@@ -13,7 +13,7 @@ let BASE_URL = "https://bible-api.com/"
 let BASE_URL2 = "https://bible-api.com/" + verseAddress2
 let BASE_URL3 = "https://bible-api.com/" + verseAddress3
 
-// https://bible-api.com/1 thessalonians 5:18
+// https://bible-api.com/psalm 100:4
 
 
 
@@ -26,6 +26,7 @@ function chooseVerses() {
   if (topic.toLowerCase() === "thanksgiving") {
     console.log("code geass");
     verseAddress1 = "1 thessalonians 5:18"
+    verseAddress2 = "psalm 100:4"
   } 
 }
 
@@ -50,6 +51,14 @@ function GenerateSection() {
       .then(function (response) {
         console.log(response.data.text);
         setTopicVerse(response.data.text)
+
+        return axios({
+          method: 'get',
+          url: BASE_URL2 + verseAddress2,
+        })
+        .then(function (response){
+          console.log(response.data.text);
+        })
       });
   }
   
