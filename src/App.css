@@ -101,7 +101,7 @@ button[disabled] {
   float: right;
 }
 
-#password {
+#prayer {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -122,6 +122,10 @@ button[disabled] {
   overflow: hidden;
 }
 
+.verses{
+  height: 500px;
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -129,7 +133,7 @@ button[disabled] {
     padding: 10px 15px;
   }
 
-  #password {
+  #prayer {
     font-size: 1rem;
   }
 }
