@@ -25,10 +25,14 @@ const topic = "Thanksgiving"
 function chooseVerses() {
   if (topic.toLowerCase() === "thanksgiving") {
     console.log("code geass");
-    verseAddress1 = "1 thessalonians 5:18"
-    verseAddress2 = "psalm 100:4"
+    BASE_URL = "https://bible-api.com/1 thessalonians 5:18"
+    BASE_URL2 = "https://bible-api.com/psalm 100:4"
+    BASE_URL3 = "https://bible-api.com/colossians+2:6-7"
   } 
 }
+
+chooseVerses()
+
 
 
 
@@ -73,7 +77,6 @@ function GenerateSection() {
  
  
   
-  chooseVerses()
   getVerses()
 
 
@@ -94,7 +97,9 @@ function GenerateSection() {
             readonly
             id="prayer"
             className="verses"
-            value={topicVerse + topicVerse2 + topicVerse3}
+            value={ topicVerse 
+              + "\n" + topicVerse2 
+              + "\n" + topicVerse3}
             placeholder="Your Scriptures"
             aria-label="Generated Password"
           ></textarea>
