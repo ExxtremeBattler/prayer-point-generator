@@ -3,15 +3,12 @@ import { useState } from "react";
 import prayerTopics from "../prayerTopics.json"
 import axios from "axios";
 
-let verseAddress1 = "john3:16"
-let verseAddress2 = "john3:16"
-let verseAddress3 = "john3:16"
 
+// verses are john 3:16 by default
 
-
-let BASE_URL = "https://bible-api.com/"  + verseAddress1
-let BASE_URL2 = "https://bible-api.com/" + verseAddress2
-let BASE_URL3 = "https://bible-api.com/" + verseAddress3
+let BASE_URL = "https://bible-api.com/john3:16" 
+let BASE_URL2 = "https://bible-api.com/john3:16"
+let BASE_URL3 = "https://bible-api.com/john3:16"
 
 // https://bible-api.com/psalm 100:4
 
@@ -19,16 +16,27 @@ let BASE_URL3 = "https://bible-api.com/" + verseAddress3
 
 
 // const topic = (prayerTopics[Math.floor(Math.random() * prayerTopics.length)])
-const topic = "Thanksgiving"
+const topic = "Confession & Forgiveness"
 
 
 function chooseVerses() {
+
+  //conditional logic for choosing which verses to later fetch, based on the current topic
+
   if (topic.toLowerCase() === "thanksgiving") {
     console.log("code geass");
     BASE_URL = "https://bible-api.com/1 thessalonians 5:18"
     BASE_URL2 = "https://bible-api.com/psalm 100:4"
     BASE_URL3 = "https://bible-api.com/colossians+2:6-7"
   } 
+
+  else if(topic.toLowerCase().includes("confession")){
+    console.log("code geass")
+    BASE_URL = "https://bible-api.com/proverbs 28:13"
+    BASE_URL2 = "https://bible-api.com/isaiah+1:18-19"
+    BASE_URL3 = "https://bible-api.com/1john1:9"
+
+  }
 }
 
 chooseVerses()
