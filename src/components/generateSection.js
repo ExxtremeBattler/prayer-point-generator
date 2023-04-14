@@ -9,7 +9,7 @@ let verseAddress3 = "john3:16"
 
 
 
-let BASE_URL = "https://bible-api.com/" 
+let BASE_URL = "https://bible-api.com/"  + verseAddress1
 let BASE_URL2 = "https://bible-api.com/" + verseAddress2
 let BASE_URL3 = "https://bible-api.com/" + verseAddress3
 
@@ -36,6 +36,9 @@ function chooseVerses() {
 function GenerateSection() {
 
   const [topicVerse, setTopicVerse] = useState("")
+  const [topicVerse2, setTopicVerse2] = useState("")
+  const [topicVerse3, setTopicVerse3] = useState("")
+
 
   // const getVerse = async () =>{
   //   const resp = await axios.get(`${BASE_URL}`)
@@ -43,27 +46,35 @@ function GenerateSection() {
   //   console.log(topicVerse);
   // }
 
-  const getVerse = () =>{
-    axios({
-      method: 'get',
-      url: BASE_URL + verseAddress1,
-    })
-      .then(function (response) {
-        console.log(response.data.text);
-        setTopicVerse(response.data.text)
+  let urls = [BASE_URL, BASE_URL2, BASE_URL3]
 
-        return axios({
-          method: 'get',
-          url: BASE_URL2 + verseAddress2,
-        })
-        .then(function (response){
-          console.log(response.data.text);
-        })
-      });
-  }
+  const getVerses = async() => {
+    const requests = urls.map((url) => axios.get(url));
+
+ axios.all(requests).then((responses) => {
+
+  responses.forEach(resp => {
+
+    if (responses.indexOf(resp) === 0) {
+      console.log(resp.data.text);
+    setTopicVerse(resp.data.text)
+    } 
+    else if(responses.indexOf(resp) === 1){
+      console.log(resp.data.text);
+      setTopicVerse2(resp.data.text)
+    }
+    else{
+      console.log(resp.data.text);
+      setTopicVerse3(resp.data.text)
+    }
+    
+  });
+ })}
+ 
+ 
   
   chooseVerses()
-  getVerse()
+  getVerses()
 
 
     return(
@@ -83,7 +94,7 @@ function GenerateSection() {
             readonly
             id="prayer"
             className="verses"
-            value={topicVerse}
+            value={topicVerse + topicVerse2 + topicVerse3}
             placeholder="Your Scriptures"
             aria-label="Generated Password"
           ></textarea>
