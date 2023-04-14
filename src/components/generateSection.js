@@ -16,7 +16,7 @@ let BASE_URL3 = "https://bible-api.com/john3:16"
 
 //logic for choosing topic
 // const topic = (prayerTopics[Math.floor(Math.random() * prayerTopics.length)])
-const topic = "The Kingdom Of God"
+const topic = "The Will of God"
 
 
 function chooseVerses() {
@@ -43,6 +43,14 @@ function chooseVerses() {
     BASE_URL = "https://bible-api.com/matthew 6:10"
     BASE_URL2 = "https://bible-api.com/matthew 6:33"
     BASE_URL3 = "https://bible-api.com/luke+17:20-21"
+
+  }
+
+  else if(topic.toLowerCase().includes("will")){
+    console.log("code geass");
+    BASE_URL = "https://bible-api.com/proverbs+3:5-6"
+    BASE_URL2 = "https://bible-api.com/romans 12:2"
+    BASE_URL3 = "https://bible-api.com/1 peter 2:15"
 
   }
 
