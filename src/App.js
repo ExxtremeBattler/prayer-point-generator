@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './components/Header';
-import GenerateSection from './components/GenerateSection';
+import Header from './components/Header.js';
+import GenerateSection from './components/GenerateSection.js';
 import './App.css';
 
 function App() {
