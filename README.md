@@ -1,6 +1,6 @@
-# Prayer Point Generator [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/58360d24-052f-4317-839d-0e5b3f99b142/deploy-status)](https://app.netlify.com/sites/zippy-beignet-3b643e/deploys)
+# Prayer Point Generator [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com) 
 
-Netlify link : https://zippy-beignet-3b643e.netlify.app/
+Deployed App : https://zippy-beignet-3b643e.netlify.app/
 
 ## Table of Contents 
  
