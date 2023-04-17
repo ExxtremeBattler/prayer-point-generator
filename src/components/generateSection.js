@@ -15,8 +15,8 @@ let BASE_URL3 = "https://bible-api.com/john3:16"
 
 
 //logic for choosing topic
-// const topic = (prayerTopics[Math.floor(Math.random() * prayerTopics.length)])
-const topic = "The Will of God"
+const topic = (prayerTopics[Math.floor(Math.random() * prayerTopics.length)])
+// const topic = "The Will of God"
 
 
 function chooseVerses() {
@@ -52,6 +52,24 @@ function chooseVerses() {
     BASE_URL2 = "https://bible-api.com/romans 12:2"
     BASE_URL3 = "https://bible-api.com/1 peter 2:15"
 
+  }
+  else if(topic.toLowerCase().includes("bread")){
+    console.log("code geass");
+    BASE_URL = "https://bible-api.com/matthew6:33"
+    BASE_URL2 = "https://bible-api.com/matthew6:11"
+    BASE_URL3 = "https://bible-api.com/job23:12"
+  }
+  else if(topic.toLowerCase().includes("temptation")){
+    console.log("code geass");
+    BASE_URL = "https://bible-api.com/1corinthians10:13"
+    BASE_URL2 = "https://bible-api.com/matthew26:41"
+    BASE_URL3 = "https://bible-api.com/james4:7"
+  }
+  else if(topic.toLowerCase().includes("deliverance")){
+    console.log("code geass");
+    BASE_URL = "https://bible-api.com/psalm34:17"
+    BASE_URL2 = "https://bible-api.com/psalm50:15"
+    BASE_URL3 = "https://bible-api.com/2samuel22:2"
   }
 
 }
