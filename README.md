@@ -1,68 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Prayer Point Generator [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/58360d24-052f-4317-839d-0e5b3f99b142/deploy-status)](https://app.netlify.com/sites/zippy-beignet-3b643e/deploys)
 
-## Available Scripts
+Netlify link : https://zippy-beignet-3b643e.netlify.app/
 
-In the project directory, you can run:
+## Table of Contents 
+ 
+- [Description](#description) 
+- [Installation](#installation) 
+- [Usage](#usage) 
+- [Development](#development) 
+- [Contributors](#contributors) 
+- [License](#license)  
 
-### `npm start`
+## Description 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This app is a single-page website that people can use to generate prompts for prayer. On page (re)load, the user will be presented with a random prayer topic and 3 relevant scriptures that can be used during prayer.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+## Installation 
+The app will load in any browser, and is hosted at the URL above. The app can be accessed and used on any device.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage 
+On visiting the site, the website will display two boxes; in the first box, a prayer topic will be generated. In the box below, 3 scriptures relevant to that particular prayer point will also be generated for the user.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Development
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This app is built in [React](https://react.dev/) using create-react-app. It was written in JavaScript, JSX and CSS.
 
-### `npm run eject`
+Verses were fetched with [Bible API](https://bible-api.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contributors 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[Jehovah, his son Jesus Christ, and the Holy Spirit](https://whojesusis.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[ExxtremeBattler](https://github.com/ExxtremeBattler)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Please contact me at the above link if you have any questions.
+ 
+## License 
+This project is covered under the MIT License. Please refer to the repository for more information.
