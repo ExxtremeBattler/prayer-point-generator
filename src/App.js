@@ -3,6 +3,7 @@ import Header from './components/Header.js';
 import GenerateSection from './components/GenerateSection.js';
 import './App.css';
 
+
 function App() {
   return (
     <div className="App">
