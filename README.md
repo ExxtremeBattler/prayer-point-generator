@@ -1,6 +1,6 @@
 # Prayer Point Generator [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com) 
 
-Deployed App : https://zippy-beignet-3b643e.netlify.app/
+Deployed App : https://musical-bublanina-803a48.netlify.app/
 
 ## Table of Contents 
  
