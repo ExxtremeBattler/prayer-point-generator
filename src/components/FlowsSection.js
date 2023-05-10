@@ -13,7 +13,7 @@ function FlowsSection() {
 
         </p>
 
-        <button> <Link to="Epehsians"> The Ephesians FLOW </Link> </button>
+        <button> <Link to="Ephesians"> The Ephesians FLOW </Link> </button>
         <button> <Link to="OurFather"> The Our Father FLOW </Link> </button>
         <button> <Link to="Timothy"> The Timothy FLOW </Link> </button>
 
