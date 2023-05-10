@@ -4,6 +4,7 @@ import GenerateSection from './components/GenerateSection.js';
 import './App.css';
 import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 import MainMenu from './components/mainMenu.js';
+import FlowsSection from './components/FlowsSection.js';
 
 
 
@@ -18,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element = {<MainMenu />} />
         <Route path="Generate" element={<GenerateSection />} />
-        {/* <Route path="flows" element={<GenerateSection />} /> */}
+        <Route path="flows" element={<FlowsSection />} />
 
       </Routes>
       
