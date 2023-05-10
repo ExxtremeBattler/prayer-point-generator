@@ -1,6 +1,6 @@
-# Prayer Point Generator [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com) 
+# Prayer Point Generator [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/aacff139-0dde-4af6-9d48-f94dc43cd43b/deploy-status)](https://app.netlify.com/sites/musical-bublanina-803a48/deploys)
 
-Deployed App : https://zippy-beignet-3b643e.netlify.app/
+Deployed App : https://musical-bublanina-803a48.netlify.app/
 
 ## Table of Contents 
  
