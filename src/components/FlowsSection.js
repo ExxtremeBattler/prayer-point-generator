@@ -18,11 +18,6 @@ function FlowsSection() {
         <button> <Link to="OurFather"> The Our Father FLOW </Link> </button>
         <button> <Link to="Timothy"> The Timothy FLOW </Link> </button>
 
-        <Routes>
-            <Route path = "Ephesians" element = {<Ephesians />}></Route>
-        </Routes>
-
-
 
     </div>)
     

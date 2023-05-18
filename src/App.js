@@ -16,7 +16,8 @@ import GenerateSection from './components/GenerateSection.js';
 // FLOWS
 import FlowsSection from './components/FlowsSection.js';
 import Ephesians from './components/flows/Ephesians.js';
-import OurFather from './components/flows/ourFather.js';
+import OurFather from './components/flows/OurFather.js';
+import Timothy from './components/flows/Timothy';
 
 
 
@@ -33,7 +34,9 @@ function App() {
         <Route path="Generate" element={<GenerateSection />} />
         <Route path="flows" element={<FlowsSection />} />
         <Route path="/Flows/Ephesians" element={<Ephesians />} /> 
-        <Route path="/Flows/OurFather" element={<OurFather />} />  this ain't working yet - why?
+        <Route path="/Flows/OurFather" element={<OurFather />} />  
+        <Route path="/Flows/Timothy" element={<Timothy />} />  
+
 
 
       </Routes>

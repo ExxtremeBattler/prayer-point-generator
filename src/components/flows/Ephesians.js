@@ -3,7 +3,7 @@ import React from "react"
 function Ephesians() {
 
     return(<div>
-        <p> This is the Epehsians FLOW, where we'll be praying over the following:
+        <p> This is the Ephesians FLOW, where we'll be praying over the following:
              - Thanksgiving
              - Wisdom & Revelation
              - Eyes of Understanding
